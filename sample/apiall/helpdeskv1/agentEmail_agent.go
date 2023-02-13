@@ -16,8 +16,8 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/larksuite/oapi-sdk-go/v3"
-	"github.com/larksuite/oapi-sdk-go/v3/core"
+	"github.com/assassinLL/oapi-sdk-go/v3"
+	"github.com/assassinLL/oapi-sdk-go/v3/core"
 )
 
 // GET /open-apis/helpdesk/v1/agent_emails

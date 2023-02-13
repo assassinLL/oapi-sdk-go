@@ -16,9 +16,9 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/larksuite/oapi-sdk-go/v3"
-	"github.com/larksuite/oapi-sdk-go/v3/core"
-	"github.com/larksuite/oapi-sdk-go/v3/service/calendar/v4"
+	"github.com/assassinLL/oapi-sdk-go/v3"
+	"github.com/assassinLL/oapi-sdk-go/v3/core"
+	"github.com/assassinLL/oapi-sdk-go/v3/service/calendar/v4"
 )
 
 // GET /open-apis/calendar/v4/calendars/:calendar_id/acls

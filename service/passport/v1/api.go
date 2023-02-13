@@ -17,7 +17,7 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/larksuite/oapi-sdk-go/v3/core"
+	"github.com/assassinLL/oapi-sdk-go/v3/core"
 )
 
 func NewService(config *larkcore.Config) *PassportService {
@@ -41,7 +41,7 @@ type session struct {
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/passport-v1/session/query
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/passportv1/query_session.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/passportv1/query_session.go
 func (s *session) Query(ctx context.Context, req *QuerySessionReq, options ...larkcore.RequestOptionFunc) (*QuerySessionResp, error) {
 	// 发起请求
 	apiReq := req.apiReq

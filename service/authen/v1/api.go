@@ -17,7 +17,7 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/larksuite/oapi-sdk-go/v3/core"
+	"github.com/assassinLL/oapi-sdk-go/v3/core"
 )
 
 func NewService(config *larkcore.Config) *AuthenService {
@@ -51,7 +51,7 @@ type userInfo struct {
 //
 // - 官网API文档链接:https://open.feishu.cn/api-explorer?from=op_doc_tab&apiName=create&project=authen&resource=access_token&version=v1
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/authenv1/create_accessToken.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/authenv1/create_accessToken.go
 func (a *accessToken) Create(ctx context.Context, req *CreateAccessTokenReq, options ...larkcore.RequestOptionFunc) (*CreateAccessTokenResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -77,7 +77,7 @@ func (a *accessToken) Create(ctx context.Context, req *CreateAccessTokenReq, opt
 //
 // - 官网API文档链接:https://open.feishu.cn/api-explorer?from=op_doc_tab&apiName=create&project=authen&resource=refresh_access_token&version=v1
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/authenv1/create_refreshAccessToken.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/authenv1/create_refreshAccessToken.go
 func (r *refreshAccessToken) Create(ctx context.Context, req *CreateRefreshAccessTokenReq, options ...larkcore.RequestOptionFunc) (*CreateRefreshAccessTokenResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -103,7 +103,7 @@ func (r *refreshAccessToken) Create(ctx context.Context, req *CreateRefreshAcces
 //
 // - 官网API文档链接:https://open.feishu.cn/api-explorer?from=op_doc_tab&apiName=get&project=authen&resource=user_info&version=v1
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/authenv1/get_userInfo.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/authenv1/get_userInfo.go
 func (u *userInfo) Get(ctx context.Context, options ...larkcore.RequestOptionFunc) (*GetUserInfoResp, error) {
 	// 发起请求
 	apiReq := &larkcore.ApiReq{

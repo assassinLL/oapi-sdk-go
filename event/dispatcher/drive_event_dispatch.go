@@ -15,7 +15,7 @@ package dispatcher
 
 import (
 	"context"
-	"github.com/larksuite/oapi-sdk-go/v3/service/drive/v1"
+	"github.com/assassinLL/oapi-sdk-go/v3/service/drive/v1"
 )
 
 // 多维表格字段变更

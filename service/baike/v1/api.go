@@ -18,7 +18,7 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/larksuite/oapi-sdk-go/v3/core"
+	"github.com/assassinLL/oapi-sdk-go/v3/core"
 )
 
 func NewService(config *larkcore.Config) *BaikeService {
@@ -57,7 +57,7 @@ type file struct {
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/baike-v1/classification/list
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/baikev1/list_classification.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/baikev1/list_classification.go
 func (c *classification) List(ctx context.Context, req *ListClassificationReq, options ...larkcore.RequestOptionFunc) (*ListClassificationResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -95,7 +95,7 @@ func (c *classification) ListByIterator(ctx context.Context, req *ListClassifica
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/baike-v1/draft/create
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/baikev1/create_draft.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/baikev1/create_draft.go
 func (d *draft) Create(ctx context.Context, req *CreateDraftReq, options ...larkcore.RequestOptionFunc) (*CreateDraftResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -121,7 +121,7 @@ func (d *draft) Create(ctx context.Context, req *CreateDraftReq, options ...lark
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/baike-v1/draft/update
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/baikev1/update_draft.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/baikev1/update_draft.go
 func (d *draft) Update(ctx context.Context, req *UpdateDraftReq, options ...larkcore.RequestOptionFunc) (*UpdateDraftResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -147,7 +147,7 @@ func (d *draft) Update(ctx context.Context, req *UpdateDraftReq, options ...lark
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/baike-v1/entity/create
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/baikev1/create_entity.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/baikev1/create_entity.go
 func (e *entity) Create(ctx context.Context, req *CreateEntityReq, options ...larkcore.RequestOptionFunc) (*CreateEntityResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -173,7 +173,7 @@ func (e *entity) Create(ctx context.Context, req *CreateEntityReq, options ...la
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/baike-v1/entity/extract
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/baikev1/extract_entity.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/baikev1/extract_entity.go
 func (e *entity) Extract(ctx context.Context, req *ExtractEntityReq, options ...larkcore.RequestOptionFunc) (*ExtractEntityResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -201,7 +201,7 @@ func (e *entity) Extract(ctx context.Context, req *ExtractEntityReq, options ...
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/baike-v1/entity/get
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/baikev1/get_entity.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/baikev1/get_entity.go
 func (e *entity) Get(ctx context.Context, req *GetEntityReq, options ...larkcore.RequestOptionFunc) (*GetEntityResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -227,7 +227,7 @@ func (e *entity) Get(ctx context.Context, req *GetEntityReq, options ...larkcore
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/baike-v1/entity/highlight
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/baikev1/highlight_entity.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/baikev1/highlight_entity.go
 func (e *entity) Highlight(ctx context.Context, req *HighlightEntityReq, options ...larkcore.RequestOptionFunc) (*HighlightEntityResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -253,7 +253,7 @@ func (e *entity) Highlight(ctx context.Context, req *HighlightEntityReq, options
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/baike-v1/entity/list
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/baikev1/list_entity.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/baikev1/list_entity.go
 func (e *entity) List(ctx context.Context, req *ListEntityReq, options ...larkcore.RequestOptionFunc) (*ListEntityResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -287,7 +287,7 @@ func (e *entity) ListByIterator(ctx context.Context, req *ListEntityReq, options
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/baike-v1/entity/match
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/baikev1/match_entity.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/baikev1/match_entity.go
 func (e *entity) Match(ctx context.Context, req *MatchEntityReq, options ...larkcore.RequestOptionFunc) (*MatchEntityResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -313,7 +313,7 @@ func (e *entity) Match(ctx context.Context, req *MatchEntityReq, options ...lark
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/baike-v1/entity/search
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/baikev1/search_entity.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/baikev1/search_entity.go
 func (e *entity) Search(ctx context.Context, req *SearchEntityReq, options ...larkcore.RequestOptionFunc) (*SearchEntityResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -347,7 +347,7 @@ func (e *entity) SearchByIterator(ctx context.Context, req *SearchEntityReq, opt
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/baike-v1/entity/update
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/baikev1/update_entity.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/baikev1/update_entity.go
 func (e *entity) Update(ctx context.Context, req *UpdateEntityReq, options ...larkcore.RequestOptionFunc) (*UpdateEntityResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -373,7 +373,7 @@ func (e *entity) Update(ctx context.Context, req *UpdateEntityReq, options ...la
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/baike-v1/file/download
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/baikev1/download_file.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/baikev1/download_file.go
 func (f *file) Download(ctx context.Context, req *DownloadFileReq, options ...larkcore.RequestOptionFunc) (*DownloadFileResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -405,7 +405,7 @@ func (f *file) Download(ctx context.Context, req *DownloadFileReq, options ...la
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/baike-v1/file/upload
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/baikev1/upload_file.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/baikev1/upload_file.go
 func (f *file) Upload(ctx context.Context, req *UploadFileReq, options ...larkcore.RequestOptionFunc) (*UploadFileResp, error) {
 	options = append(options, larkcore.WithFileUpload())
 	// 发起请求

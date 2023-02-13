@@ -16,9 +16,9 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/larksuite/oapi-sdk-go/v3"
-	"github.com/larksuite/oapi-sdk-go/v3/core"
-	"github.com/larksuite/oapi-sdk-go/v3/service/gray_test_open_sg/v1"
+	"github.com/assassinLL/oapi-sdk-go/v3"
+	"github.com/assassinLL/oapi-sdk-go/v3/core"
+	"github.com/assassinLL/oapi-sdk-go/v3/service/gray_test_open_sg/v1"
 )
 
 // POST /open-apis/gray_test_open_sg/v1/motos

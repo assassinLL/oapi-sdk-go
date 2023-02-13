@@ -17,7 +17,7 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/larksuite/oapi-sdk-go/v3/core"
+	"github.com/assassinLL/oapi-sdk-go/v3/core"
 )
 
 func NewService(config *larkcore.Config) *ContactService {
@@ -83,7 +83,7 @@ type user struct {
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/custom_attr/list
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/list_customAttr.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/list_customAttr.go
 func (c *customAttr) List(ctx context.Context, req *ListCustomAttrReq, options ...larkcore.RequestOptionFunc) (*ListCustomAttrResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -119,7 +119,7 @@ func (c *customAttr) ListByIterator(ctx context.Context, req *ListCustomAttrReq,
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/department/children
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/children_department.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/children_department.go
 func (d *department) Children(ctx context.Context, req *ChildrenDepartmentReq, options ...larkcore.RequestOptionFunc) (*ChildrenDepartmentResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -155,7 +155,7 @@ func (d *department) ChildrenByIterator(ctx context.Context, req *ChildrenDepart
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/department/create
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/create_department.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/create_department.go
 func (d *department) Create(ctx context.Context, req *CreateDepartmentReq, options ...larkcore.RequestOptionFunc) (*CreateDepartmentResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -183,7 +183,7 @@ func (d *department) Create(ctx context.Context, req *CreateDepartmentReq, optio
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/department/delete
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/delete_department.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/delete_department.go
 func (d *department) Delete(ctx context.Context, req *DeleteDepartmentReq, options ...larkcore.RequestOptionFunc) (*DeleteDepartmentResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -211,7 +211,7 @@ func (d *department) Delete(ctx context.Context, req *DeleteDepartmentReq, optio
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/department/get
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/get_department.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/get_department.go
 func (d *department) Get(ctx context.Context, req *GetDepartmentReq, options ...larkcore.RequestOptionFunc) (*GetDepartmentResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -237,7 +237,7 @@ func (d *department) Get(ctx context.Context, req *GetDepartmentReq, options ...
 //
 // - 官网API文档链接:https://open.feishu.cn/api-explorer?from=op_doc_tab&apiName=list&project=contact&resource=department&version=v3
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/list_department.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/list_department.go
 func (d *department) List(ctx context.Context, req *ListDepartmentReq, options ...larkcore.RequestOptionFunc) (*ListDepartmentResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -273,7 +273,7 @@ func (d *department) ListByIterator(ctx context.Context, req *ListDepartmentReq,
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/department/parent
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/parent_department.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/parent_department.go
 func (d *department) Parent(ctx context.Context, req *ParentDepartmentReq, options ...larkcore.RequestOptionFunc) (*ParentDepartmentResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -309,7 +309,7 @@ func (d *department) ParentByIterator(ctx context.Context, req *ParentDepartment
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/department/patch
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/patch_department.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/patch_department.go
 func (d *department) Patch(ctx context.Context, req *PatchDepartmentReq, options ...larkcore.RequestOptionFunc) (*PatchDepartmentResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -337,7 +337,7 @@ func (d *department) Patch(ctx context.Context, req *PatchDepartmentReq, options
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/department/search
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/search_department.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/search_department.go
 func (d *department) Search(ctx context.Context, req *SearchDepartmentReq, options ...larkcore.RequestOptionFunc) (*SearchDepartmentResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -371,7 +371,7 @@ func (d *department) SearchByIterator(ctx context.Context, req *SearchDepartment
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/department/unbind_department_chat
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/unbindDepartmentChat_department.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/unbindDepartmentChat_department.go
 func (d *department) UnbindDepartmentChat(ctx context.Context, req *UnbindDepartmentChatDepartmentReq, options ...larkcore.RequestOptionFunc) (*UnbindDepartmentChatDepartmentResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -399,7 +399,7 @@ func (d *department) UnbindDepartmentChat(ctx context.Context, req *UnbindDepart
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/department/update
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/update_department.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/update_department.go
 func (d *department) Update(ctx context.Context, req *UpdateDepartmentReq, options ...larkcore.RequestOptionFunc) (*UpdateDepartmentResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -425,7 +425,7 @@ func (d *department) Update(ctx context.Context, req *UpdateDepartmentReq, optio
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/employee_type_enum/create
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/create_employeeTypeEnum.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/create_employeeTypeEnum.go
 func (e *employeeTypeEnum) Create(ctx context.Context, req *CreateEmployeeTypeEnumReq, options ...larkcore.RequestOptionFunc) (*CreateEmployeeTypeEnumResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -451,7 +451,7 @@ func (e *employeeTypeEnum) Create(ctx context.Context, req *CreateEmployeeTypeEn
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/employee_type_enum/delete
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/delete_employeeTypeEnum.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/delete_employeeTypeEnum.go
 func (e *employeeTypeEnum) Delete(ctx context.Context, req *DeleteEmployeeTypeEnumReq, options ...larkcore.RequestOptionFunc) (*DeleteEmployeeTypeEnumResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -477,7 +477,7 @@ func (e *employeeTypeEnum) Delete(ctx context.Context, req *DeleteEmployeeTypeEn
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/employee_type_enum/list
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/list_employeeTypeEnum.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/list_employeeTypeEnum.go
 func (e *employeeTypeEnum) List(ctx context.Context, req *ListEmployeeTypeEnumReq, options ...larkcore.RequestOptionFunc) (*ListEmployeeTypeEnumResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -511,7 +511,7 @@ func (e *employeeTypeEnum) ListByIterator(ctx context.Context, req *ListEmployee
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/employee_type_enum/update
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/update_employeeTypeEnum.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/update_employeeTypeEnum.go
 func (e *employeeTypeEnum) Update(ctx context.Context, req *UpdateEmployeeTypeEnumReq, options ...larkcore.RequestOptionFunc) (*UpdateEmployeeTypeEnumResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -537,7 +537,7 @@ func (e *employeeTypeEnum) Update(ctx context.Context, req *UpdateEmployeeTypeEn
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/group/create
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/create_group.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/create_group.go
 func (g *group) Create(ctx context.Context, req *CreateGroupReq, options ...larkcore.RequestOptionFunc) (*CreateGroupResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -563,7 +563,7 @@ func (g *group) Create(ctx context.Context, req *CreateGroupReq, options ...lark
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/group/delete
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/delete_group.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/delete_group.go
 func (g *group) Delete(ctx context.Context, req *DeleteGroupReq, options ...larkcore.RequestOptionFunc) (*DeleteGroupResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -589,7 +589,7 @@ func (g *group) Delete(ctx context.Context, req *DeleteGroupReq, options ...lark
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/group/get
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/get_group.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/get_group.go
 func (g *group) Get(ctx context.Context, req *GetGroupReq, options ...larkcore.RequestOptionFunc) (*GetGroupResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -615,7 +615,7 @@ func (g *group) Get(ctx context.Context, req *GetGroupReq, options ...larkcore.R
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/group/member_belong
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/memberBelong_group.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/memberBelong_group.go
 func (g *group) MemberBelong(ctx context.Context, req *MemberBelongGroupReq, options ...larkcore.RequestOptionFunc) (*MemberBelongGroupResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -641,7 +641,7 @@ func (g *group) MemberBelong(ctx context.Context, req *MemberBelongGroupReq, opt
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/group/patch
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/patch_group.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/patch_group.go
 func (g *group) Patch(ctx context.Context, req *PatchGroupReq, options ...larkcore.RequestOptionFunc) (*PatchGroupResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -667,7 +667,7 @@ func (g *group) Patch(ctx context.Context, req *PatchGroupReq, options ...larkco
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/group/simplelist
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/simplelist_group.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/simplelist_group.go
 func (g *group) Simplelist(ctx context.Context, req *SimplelistGroupReq, options ...larkcore.RequestOptionFunc) (*SimplelistGroupResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -701,7 +701,7 @@ func (g *group) SimplelistByIterator(ctx context.Context, req *SimplelistGroupRe
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/group-member/add
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/add_groupMember.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/add_groupMember.go
 func (g *groupMember) Add(ctx context.Context, req *AddGroupMemberReq, options ...larkcore.RequestOptionFunc) (*AddGroupMemberResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -729,7 +729,7 @@ func (g *groupMember) Add(ctx context.Context, req *AddGroupMemberReq, options .
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/group-member/batch_add
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/batchAdd_groupMember.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/batchAdd_groupMember.go
 func (g *groupMember) BatchAdd(ctx context.Context, req *BatchAddGroupMemberReq, options ...larkcore.RequestOptionFunc) (*BatchAddGroupMemberResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -757,7 +757,7 @@ func (g *groupMember) BatchAdd(ctx context.Context, req *BatchAddGroupMemberReq,
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/group-member/batch_remove
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/batchRemove_groupMember.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/batchRemove_groupMember.go
 func (g *groupMember) BatchRemove(ctx context.Context, req *BatchRemoveGroupMemberReq, options ...larkcore.RequestOptionFunc) (*BatchRemoveGroupMemberResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -783,7 +783,7 @@ func (g *groupMember) BatchRemove(ctx context.Context, req *BatchRemoveGroupMemb
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/group-member/remove
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/remove_groupMember.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/remove_groupMember.go
 func (g *groupMember) Remove(ctx context.Context, req *RemoveGroupMemberReq, options ...larkcore.RequestOptionFunc) (*RemoveGroupMemberResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -809,7 +809,7 @@ func (g *groupMember) Remove(ctx context.Context, req *RemoveGroupMemberReq, opt
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/group-member/simplelist
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/simplelist_groupMember.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/simplelist_groupMember.go
 func (g *groupMember) Simplelist(ctx context.Context, req *SimplelistGroupMemberReq, options ...larkcore.RequestOptionFunc) (*SimplelistGroupMemberResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -835,7 +835,7 @@ func (g *groupMember) Simplelist(ctx context.Context, req *SimplelistGroupMember
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/scope/list
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/list_scope.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/list_scope.go
 func (s *scope) List(ctx context.Context, req *ListScopeReq, options ...larkcore.RequestOptionFunc) (*ListScopeResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -861,7 +861,7 @@ func (s *scope) List(ctx context.Context, req *ListScopeReq, options ...larkcore
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/unit/bind_department
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/bindDepartment_unit.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/bindDepartment_unit.go
 func (u *unit) BindDepartment(ctx context.Context, req *BindDepartmentUnitReq, options ...larkcore.RequestOptionFunc) (*BindDepartmentUnitResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -887,7 +887,7 @@ func (u *unit) BindDepartment(ctx context.Context, req *BindDepartmentUnitReq, o
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/unit/create
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/create_unit.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/create_unit.go
 func (u *unit) Create(ctx context.Context, req *CreateUnitReq, options ...larkcore.RequestOptionFunc) (*CreateUnitResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -913,7 +913,7 @@ func (u *unit) Create(ctx context.Context, req *CreateUnitReq, options ...larkco
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/unit/delete
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/delete_unit.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/delete_unit.go
 func (u *unit) Delete(ctx context.Context, req *DeleteUnitReq, options ...larkcore.RequestOptionFunc) (*DeleteUnitResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -939,7 +939,7 @@ func (u *unit) Delete(ctx context.Context, req *DeleteUnitReq, options ...larkco
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/unit/get
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/get_unit.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/get_unit.go
 func (u *unit) Get(ctx context.Context, req *GetUnitReq, options ...larkcore.RequestOptionFunc) (*GetUnitResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -965,7 +965,7 @@ func (u *unit) Get(ctx context.Context, req *GetUnitReq, options ...larkcore.Req
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/unit/list
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/list_unit.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/list_unit.go
 func (u *unit) List(ctx context.Context, req *ListUnitReq, options ...larkcore.RequestOptionFunc) (*ListUnitResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -991,7 +991,7 @@ func (u *unit) List(ctx context.Context, req *ListUnitReq, options ...larkcore.R
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/unit/list_department
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/listDepartment_unit.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/listDepartment_unit.go
 func (u *unit) ListDepartment(ctx context.Context, req *ListDepartmentUnitReq, options ...larkcore.RequestOptionFunc) (*ListDepartmentUnitResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -1017,7 +1017,7 @@ func (u *unit) ListDepartment(ctx context.Context, req *ListDepartmentUnitReq, o
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/unit/patch
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/patch_unit.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/patch_unit.go
 func (u *unit) Patch(ctx context.Context, req *PatchUnitReq, options ...larkcore.RequestOptionFunc) (*PatchUnitResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -1043,7 +1043,7 @@ func (u *unit) Patch(ctx context.Context, req *PatchUnitReq, options ...larkcore
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/unit/unbind_department
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/unbindDepartment_unit.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/unbindDepartment_unit.go
 func (u *unit) UnbindDepartment(ctx context.Context, req *UnbindDepartmentUnitReq, options ...larkcore.RequestOptionFunc) (*UnbindDepartmentUnitResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -1071,7 +1071,7 @@ func (u *unit) UnbindDepartment(ctx context.Context, req *UnbindDepartmentUnitRe
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/user/batch_get_id
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/batchGetId_user.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/batchGetId_user.go
 func (u *user) BatchGetId(ctx context.Context, req *BatchGetIdUserReq, options ...larkcore.RequestOptionFunc) (*BatchGetIdUserResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -1099,7 +1099,7 @@ func (u *user) BatchGetId(ctx context.Context, req *BatchGetIdUserReq, options .
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/user/create
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/create_user.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/create_user.go
 func (u *user) Create(ctx context.Context, req *CreateUserReq, options ...larkcore.RequestOptionFunc) (*CreateUserResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -1127,7 +1127,7 @@ func (u *user) Create(ctx context.Context, req *CreateUserReq, options ...larkco
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/user/delete
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/delete_user.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/delete_user.go
 func (u *user) Delete(ctx context.Context, req *DeleteUserReq, options ...larkcore.RequestOptionFunc) (*DeleteUserResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -1155,7 +1155,7 @@ func (u *user) Delete(ctx context.Context, req *DeleteUserReq, options ...larkco
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/user/find_by_department
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/findByDepartment_user.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/findByDepartment_user.go
 func (u *user) FindByDepartment(ctx context.Context, req *FindByDepartmentUserReq, options ...larkcore.RequestOptionFunc) (*FindByDepartmentUserResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -1189,7 +1189,7 @@ func (u *user) FindByDepartmentByIterator(ctx context.Context, req *FindByDepart
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/user/get
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/get_user.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/get_user.go
 func (u *user) Get(ctx context.Context, req *GetUserReq, options ...larkcore.RequestOptionFunc) (*GetUserResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -1215,7 +1215,7 @@ func (u *user) Get(ctx context.Context, req *GetUserReq, options ...larkcore.Req
 //
 // - 官网API文档链接:https://open.feishu.cn/api-explorer?from=op_doc_tab&apiName=list&project=contact&resource=user&version=v3
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/list_user.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/list_user.go
 func (u *user) List(ctx context.Context, req *ListUserReq, options ...larkcore.RequestOptionFunc) (*ListUserResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -1249,7 +1249,7 @@ func (u *user) ListByIterator(ctx context.Context, req *ListUserReq, options ...
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/user/patch
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/patch_user.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/patch_user.go
 func (u *user) Patch(ctx context.Context, req *PatchUserReq, options ...larkcore.RequestOptionFunc) (*PatchUserResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -1277,7 +1277,7 @@ func (u *user) Patch(ctx context.Context, req *PatchUserReq, options ...larkcore
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/contact-v3/user/update
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/update_user.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/contactv3/update_user.go
 func (u *user) Update(ctx context.Context, req *UpdateUserReq, options ...larkcore.RequestOptionFunc) (*UpdateUserResp, error) {
 	// 发起请求
 	apiReq := req.apiReq

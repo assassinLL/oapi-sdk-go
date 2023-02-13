@@ -16,9 +16,9 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/larksuite/oapi-sdk-go/v3"
-	"github.com/larksuite/oapi-sdk-go/v3/core"
-	"github.com/larksuite/oapi-sdk-go/v3/service/mail/v1"
+	"github.com/assassinLL/oapi-sdk-go/v3"
+	"github.com/assassinLL/oapi-sdk-go/v3/core"
+	"github.com/assassinLL/oapi-sdk-go/v3/service/mail/v1"
 )
 
 // GET /open-apis/mail/v1/mailgroups/:mailgroup_id/permission_members

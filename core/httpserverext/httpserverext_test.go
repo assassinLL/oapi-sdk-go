@@ -20,10 +20,10 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/larksuite/oapi-sdk-go/v3/card"
-	"github.com/larksuite/oapi-sdk-go/v3/core"
-	"github.com/larksuite/oapi-sdk-go/v3/event/dispatcher"
-	"github.com/larksuite/oapi-sdk-go/v3/service/im/v1"
+	"github.com/assassinLL/oapi-sdk-go/v3/card"
+	"github.com/assassinLL/oapi-sdk-go/v3/core"
+	"github.com/assassinLL/oapi-sdk-go/v3/event/dispatcher"
+	"github.com/assassinLL/oapi-sdk-go/v3/service/im/v1"
 )
 
 func TestStartHttpServer(t *testing.T) {

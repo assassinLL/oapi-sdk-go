@@ -42,7 +42,7 @@
 ## 安装
 
 ```go
-go get -u github.com/larksuite/oapi-sdk-go/v3@v3.0.17
+go get -u github.com/assassinLL/oapi-sdk-go/v3@v3.0.17
 ```
 
 ## API Client
@@ -289,9 +289,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/larksuite/oapi-sdk-go/v3"
-	"github.com/larksuite/oapi-sdk-go/v3/core"
-	"github.com/larksuite/oapi-sdk-go/v3/service/docx/v1"
+	"github.com/assassinLL/oapi-sdk-go/v3"
+	"github.com/assassinLL/oapi-sdk-go/v3/core"
+	"github.com/assassinLL/oapi-sdk-go/v3/service/docx/v1"
 )
 
 
@@ -336,9 +336,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/larksuite/oapi-sdk-go/v3"
-	"github.com/larksuite/oapi-sdk-go/v3/core"
-	"github.com/larksuite/oapi-sdk-go/v3/service/docx/v1"
+	"github.com/assassinLL/oapi-sdk-go/v3"
+	"github.com/assassinLL/oapi-sdk-go/v3/core"
+	"github.com/assassinLL/oapi-sdk-go/v3/service/docx/v1"
 )
 
 func main() {
@@ -474,8 +474,8 @@ func main() {
 import (
 	"context"
 	"fmt"
-	"github.com/larksuite/oapi-sdk-go/v3"
-	"github.com/larksuite/oapi-sdk-go/v3/core"
+	"github.com/assassinLL/oapi-sdk-go/v3"
+	"github.com/assassinLL/oapi-sdk-go/v3/core"
 	"net/http"
 	"os"
 )
@@ -529,11 +529,11 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/larksuite/oapi-sdk-go/v3/core"
-	"github.com/larksuite/oapi-sdk-go/v3/event"
-	"github.com/larksuite/oapi-sdk-go/v3/event/dispatcher"
-	"github.com/larksuite/oapi-sdk-go/v3/core/httpserverext"
-	"github.com/larksuite/oapi-sdk-go/v3/service/im/v1"
+	"github.com/assassinLL/oapi-sdk-go/v3/core"
+	"github.com/assassinLL/oapi-sdk-go/v3/event"
+	"github.com/assassinLL/oapi-sdk-go/v3/event/dispatcher"
+	"github.com/assassinLL/oapi-sdk-go/v3/core/httpserverext"
+	"github.com/assassinLL/oapi-sdk-go/v3/service/im/v1"
 )
 
 func main() {
@@ -587,15 +587,15 @@ func main() {
 import (
 	"context"
 	"fmt"
-	lark "github.com/larksuite/oapi-sdk-go/v3"
+	lark "github.com/assassinLL/oapi-sdk-go/v3"
 	"net/http"
 	"os"
 
-	"github.com/larksuite/oapi-sdk-go/v3/core"
-	"github.com/larksuite/oapi-sdk-go/v3/core/httpserverext"
-	"github.com/larksuite/oapi-sdk-go/v3/event"
-	"github.com/larksuite/oapi-sdk-go/v3/event/dispatcher"
-	"github.com/larksuite/oapi-sdk-go/v3/service/im/v1"
+	"github.com/assassinLL/oapi-sdk-go/v3/core"
+	"github.com/assassinLL/oapi-sdk-go/v3/core/httpserverext"
+	"github.com/assassinLL/oapi-sdk-go/v3/event"
+	"github.com/assassinLL/oapi-sdk-go/v3/event/dispatcher"
+	"github.com/assassinLL/oapi-sdk-go/v3/service/im/v1"
 )
 
 func main() {
@@ -648,12 +648,12 @@ func main() {
 ### 集成Gin框架
 如果开发者当前应用使用的是 Gin Web 框架，并且不想要使用 Go-Sdk 提供的原生的 Http Server，则可使用下面方式，把当前应用的 Gin 服务与 SDK进行集成。
 
-要想把 SDK 集成已有 Gin 框架，开发者需要引入集成包 [oapi-sdk-gin](https://github.com/larksuite/oapi-sdk-gin)
+要想把 SDK 集成已有 Gin 框架，开发者需要引入集成包 [oapi-sdk-gin](https://github.com/assassinLL/oapi-sdk-gin)
 
 #### 安装集成包
 
 ```go
-go get -u github.com/larksuite/oapi-sdk-gin
+go get -u github.com/assassinLL/oapi-sdk-gin
 ```
 
 #### 集成示例
@@ -664,12 +664,12 @@ import (
 	"fmt"
 
 	 "github.com/gin-gonic/gin"
-	 "github.com/larksuite/oapi-sdk-gin"
-	 "github.com/larksuite/oapi-sdk-go/v3/card"
-	 "github.com/larksuite/oapi-sdk-go/v3/core"
-	 "github.com/larksuite/oapi-sdk-go/v3/event/dispatcher"
-	 "github.com/larksuite/oapi-sdk-go/v3/service/contact/v3"
-	 "github.com/larksuite/oapi-sdk-go/v3/service/im/v1"
+	 "github.com/assassinLL/oapi-sdk-gin"
+	 "github.com/assassinLL/oapi-sdk-go/v3/card"
+	 "github.com/assassinLL/oapi-sdk-go/v3/core"
+	 "github.com/assassinLL/oapi-sdk-go/v3/event/dispatcher"
+	 "github.com/assassinLL/oapi-sdk-go/v3/service/contact/v3"
+	 "github.com/assassinLL/oapi-sdk-go/v3/service/im/v1"
 )
 
 func main() {
@@ -713,9 +713,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/larksuite/oapi-sdk-go/v3/card"
-	"github.com/larksuite/oapi-sdk-go/v3/core"
-	"github.com/larksuite/oapi-sdk-go/v3/core/httpserverext"
+	"github.com/assassinLL/oapi-sdk-go/v3/card"
+	"github.com/assassinLL/oapi-sdk-go/v3/core"
+	"github.com/assassinLL/oapi-sdk-go/v3/core/httpserverext"
 )
 
 func main() {
@@ -755,9 +755,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/larksuite/oapi-sdk-go/v3/card"
-	"github.com/larksuite/oapi-sdk-go/v3/core"
-	"github.com/larksuite/oapi-sdk-go/v3/core/httpserverext"
+	"github.com/assassinLL/oapi-sdk-go/v3/card"
+	"github.com/assassinLL/oapi-sdk-go/v3/core"
+	"github.com/assassinLL/oapi-sdk-go/v3/core/httpserverext"
 )
 
 func main() {
@@ -801,9 +801,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/larksuite/oapi-sdk-go/v3/card"
-	"github.com/larksuite/oapi-sdk-go/v3/core"
-	"github.com/larksuite/oapi-sdk-go/v3/core/httpserverext"
+	"github.com/assassinLL/oapi-sdk-go/v3/card"
+	"github.com/assassinLL/oapi-sdk-go/v3/core"
+	"github.com/assassinLL/oapi-sdk-go/v3/core/httpserverext"
 )
 
 func main() {
@@ -857,9 +857,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/larksuite/oapi-sdk-go/v3/card"
-	"github.com/larksuite/oapi-sdk-go/v3/core"
-	"github.com/larksuite/oapi-sdk-go/v3/core/httpserverext"
+	"github.com/assassinLL/oapi-sdk-go/v3/card"
+	"github.com/assassinLL/oapi-sdk-go/v3/core"
+	"github.com/assassinLL/oapi-sdk-go/v3/core/httpserverext"
 )
 
 func main() {
@@ -907,12 +907,12 @@ func main() {
 
 如果开发者当前应用使用的是 Gin Web 框架，并且不想要使用 Go-Sdk 提供的原生的 Http Server，则可使用下面方式，把当前应用的 Gin 服务与 SDK进行集成。
 
-要想把 SDK 集成已有 Gin 框架，开发者需要引入集成包 [oapi-sdk-gin](https://github.com/larksuite/oapi-sdk-gin)
+要想把 SDK 集成已有 Gin 框架，开发者需要引入集成包 [oapi-sdk-gin](https://github.com/assassinLL/oapi-sdk-gin)
 
 #### 安装集成包
 
 ```go
-go get -u github.com/larksuite/oapi-sdk-gin
+go get -u github.com/assassinLL/oapi-sdk-gin
 ```
 
 #### 集成示例
@@ -923,9 +923,9 @@ import (
     "fmt"
     
     "github.com/gin-gonic/gin"
-    "github.com/larksuite/oapi-sdk-gin"
-    "github.com/larksuite/oapi-sdk-go/v3/card"
-    "github.com/larksuite/oapi-sdk-go/v3/core"
+    "github.com/assassinLL/oapi-sdk-gin"
+    "github.com/assassinLL/oapi-sdk-go/v3/card"
+    "github.com/assassinLL/oapi-sdk-go/v3/core"
 )
 
 

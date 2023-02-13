@@ -15,7 +15,7 @@ package dispatcher
 
 import (
 	"context"
-	"github.com/larksuite/oapi-sdk-go/v3/service/calendar/v4"
+	"github.com/assassinLL/oapi-sdk-go/v3/service/calendar/v4"
 )
 
 // 日历变更

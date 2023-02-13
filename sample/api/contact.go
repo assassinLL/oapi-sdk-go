@@ -17,9 +17,9 @@ import (
 	"fmt"
 	"os"
 
-	lark "github.com/larksuite/oapi-sdk-go/v3"
-	larkcore "github.com/larksuite/oapi-sdk-go/v3/core"
-	larkcontact "github.com/larksuite/oapi-sdk-go/v3/service/contact/v3"
+	lark "github.com/assassinLL/oapi-sdk-go/v3"
+	larkcore "github.com/assassinLL/oapi-sdk-go/v3/core"
+	larkcontact "github.com/assassinLL/oapi-sdk-go/v3/service/contact/v3"
 )
 
 func getUserInfo() {

@@ -18,7 +18,7 @@ import (
 	"reflect"
 	"strings"
 
-	larkevent "github.com/larksuite/oapi-sdk-go/v3/event"
+	larkevent "github.com/assassinLL/oapi-sdk-go/v3/event"
 )
 
 type ChatI18nNames struct {

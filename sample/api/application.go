@@ -20,8 +20,8 @@ import (
 	"os"
 	"time"
 
-	lark "github.com/larksuite/oapi-sdk-go/v3"
-	larkapplication "github.com/larksuite/oapi-sdk-go/v3/service/application/v6"
+	lark "github.com/assassinLL/oapi-sdk-go/v3"
+	larkapplication "github.com/assassinLL/oapi-sdk-go/v3/service/application/v6"
 )
 
 func main() {

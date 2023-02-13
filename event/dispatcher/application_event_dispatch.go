@@ -15,7 +15,7 @@ package dispatcher
 
 import (
 	"context"
-	"github.com/larksuite/oapi-sdk-go/v3/service/application/v6"
+	"github.com/assassinLL/oapi-sdk-go/v3/service/application/v6"
 )
 
 // 应用创建

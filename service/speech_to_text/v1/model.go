@@ -14,7 +14,7 @@
 package larkspeech_to_text
 
 import (
-	"github.com/larksuite/oapi-sdk-go/v3/core"
+	"github.com/assassinLL/oapi-sdk-go/v3/core"
 )
 
 type FileConfig struct {

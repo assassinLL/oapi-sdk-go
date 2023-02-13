@@ -18,7 +18,7 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/larksuite/oapi-sdk-go/v3/core"
+	"github.com/assassinLL/oapi-sdk-go/v3/core"
 )
 
 func NewService(config *larkcore.Config) *ImService {
@@ -129,7 +129,7 @@ type pin struct {
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/batch_message/delete
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/delete_batchMessage.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/delete_batchMessage.go
 func (b *batchMessage) Delete(ctx context.Context, req *DeleteBatchMessageReq, options ...larkcore.RequestOptionFunc) (*DeleteBatchMessageResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -157,7 +157,7 @@ func (b *batchMessage) Delete(ctx context.Context, req *DeleteBatchMessageReq, o
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/batch_message/get_progress
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/getProgress_batchMessage.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/getProgress_batchMessage.go
 func (b *batchMessage) GetProgress(ctx context.Context, req *GetProgressBatchMessageReq, options ...larkcore.RequestOptionFunc) (*GetProgressBatchMessageResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -185,7 +185,7 @@ func (b *batchMessage) GetProgress(ctx context.Context, req *GetProgressBatchMes
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/batch_message/read_user
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/readUser_batchMessage.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/readUser_batchMessage.go
 func (b *batchMessage) ReadUser(ctx context.Context, req *ReadUserBatchMessageReq, options ...larkcore.RequestOptionFunc) (*ReadUserBatchMessageResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -213,7 +213,7 @@ func (b *batchMessage) ReadUser(ctx context.Context, req *ReadUserBatchMessageRe
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/chat/create
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/create_chat.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/create_chat.go
 func (c *chat) Create(ctx context.Context, req *CreateChatReq, options ...larkcore.RequestOptionFunc) (*CreateChatResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -241,7 +241,7 @@ func (c *chat) Create(ctx context.Context, req *CreateChatReq, options ...larkco
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/chat/delete
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/delete_chat.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/delete_chat.go
 func (c *chat) Delete(ctx context.Context, req *DeleteChatReq, options ...larkcore.RequestOptionFunc) (*DeleteChatResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -269,7 +269,7 @@ func (c *chat) Delete(ctx context.Context, req *DeleteChatReq, options ...larkco
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/chat/get
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/get_chat.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/get_chat.go
 func (c *chat) Get(ctx context.Context, req *GetChatReq, options ...larkcore.RequestOptionFunc) (*GetChatResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -297,7 +297,7 @@ func (c *chat) Get(ctx context.Context, req *GetChatReq, options ...larkcore.Req
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/chat/link
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/link_chat.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/link_chat.go
 func (c *chat) Link(ctx context.Context, req *LinkChatReq, options ...larkcore.RequestOptionFunc) (*LinkChatResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -325,7 +325,7 @@ func (c *chat) Link(ctx context.Context, req *LinkChatReq, options ...larkcore.R
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/chat/list
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/list_chat.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/list_chat.go
 func (c *chat) List(ctx context.Context, req *ListChatReq, options ...larkcore.RequestOptionFunc) (*ListChatResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -361,7 +361,7 @@ func (c *chat) ListByIterator(ctx context.Context, req *ListChatReq, options ...
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/chat/search
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/search_chat.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/search_chat.go
 func (c *chat) Search(ctx context.Context, req *SearchChatReq, options ...larkcore.RequestOptionFunc) (*SearchChatResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -397,7 +397,7 @@ func (c *chat) SearchByIterator(ctx context.Context, req *SearchChatReq, options
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/chat/update
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/update_chat.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/update_chat.go
 func (c *chat) Update(ctx context.Context, req *UpdateChatReq, options ...larkcore.RequestOptionFunc) (*UpdateChatResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -425,7 +425,7 @@ func (c *chat) Update(ctx context.Context, req *UpdateChatReq, options ...larkco
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/chat-announcement/get
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/get_chatAnnouncement.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/get_chatAnnouncement.go
 func (c *chatAnnouncement) Get(ctx context.Context, req *GetChatAnnouncementReq, options ...larkcore.RequestOptionFunc) (*GetChatAnnouncementResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -453,7 +453,7 @@ func (c *chatAnnouncement) Get(ctx context.Context, req *GetChatAnnouncementReq,
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/chat-announcement/patch
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/patch_chatAnnouncement.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/patch_chatAnnouncement.go
 func (c *chatAnnouncement) Patch(ctx context.Context, req *PatchChatAnnouncementReq, options ...larkcore.RequestOptionFunc) (*PatchChatAnnouncementResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -481,7 +481,7 @@ func (c *chatAnnouncement) Patch(ctx context.Context, req *PatchChatAnnouncement
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/chat-managers/add_managers
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/addManagers_chatManagers.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/addManagers_chatManagers.go
 func (c *chatManagers) AddManagers(ctx context.Context, req *AddManagersChatManagersReq, options ...larkcore.RequestOptionFunc) (*AddManagersChatManagersResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -509,7 +509,7 @@ func (c *chatManagers) AddManagers(ctx context.Context, req *AddManagersChatMana
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/chat-managers/delete_managers
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/deleteManagers_chatManagers.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/deleteManagers_chatManagers.go
 func (c *chatManagers) DeleteManagers(ctx context.Context, req *DeleteManagersChatManagersReq, options ...larkcore.RequestOptionFunc) (*DeleteManagersChatManagersResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -537,7 +537,7 @@ func (c *chatManagers) DeleteManagers(ctx context.Context, req *DeleteManagersCh
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/chat-members/create
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/create_chatMembers.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/create_chatMembers.go
 func (c *chatMembers) Create(ctx context.Context, req *CreateChatMembersReq, options ...larkcore.RequestOptionFunc) (*CreateChatMembersResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -565,7 +565,7 @@ func (c *chatMembers) Create(ctx context.Context, req *CreateChatMembersReq, opt
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/chat-members/delete
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/delete_chatMembers.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/delete_chatMembers.go
 func (c *chatMembers) Delete(ctx context.Context, req *DeleteChatMembersReq, options ...larkcore.RequestOptionFunc) (*DeleteChatMembersResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -593,7 +593,7 @@ func (c *chatMembers) Delete(ctx context.Context, req *DeleteChatMembersReq, opt
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/chat-members/get
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/get_chatMembers.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/get_chatMembers.go
 func (c *chatMembers) Get(ctx context.Context, req *GetChatMembersReq, options ...larkcore.RequestOptionFunc) (*GetChatMembersResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -629,7 +629,7 @@ func (c *chatMembers) GetByIterator(ctx context.Context, req *GetChatMembersReq,
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/chat-members/is_in_chat
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/isInChat_chatMembers.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/isInChat_chatMembers.go
 func (c *chatMembers) IsInChat(ctx context.Context, req *IsInChatChatMembersReq, options ...larkcore.RequestOptionFunc) (*IsInChatChatMembersResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -657,7 +657,7 @@ func (c *chatMembers) IsInChat(ctx context.Context, req *IsInChatChatMembersReq,
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/chat-members/me_join
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/meJoin_chatMembers.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/meJoin_chatMembers.go
 func (c *chatMembers) MeJoin(ctx context.Context, req *MeJoinChatMembersReq, options ...larkcore.RequestOptionFunc) (*MeJoinChatMembersResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -685,7 +685,7 @@ func (c *chatMembers) MeJoin(ctx context.Context, req *MeJoinChatMembersReq, opt
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/chat-menu_item/patch
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/patch_chatMenuItem.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/patch_chatMenuItem.go
 func (c *chatMenuItem) Patch(ctx context.Context, req *PatchChatMenuItemReq, options ...larkcore.RequestOptionFunc) (*PatchChatMenuItemResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -713,7 +713,7 @@ func (c *chatMenuItem) Patch(ctx context.Context, req *PatchChatMenuItemReq, opt
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/chat-menu_tree/create
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/create_chatMenuTree.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/create_chatMenuTree.go
 func (c *chatMenuTree) Create(ctx context.Context, req *CreateChatMenuTreeReq, options ...larkcore.RequestOptionFunc) (*CreateChatMenuTreeResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -741,7 +741,7 @@ func (c *chatMenuTree) Create(ctx context.Context, req *CreateChatMenuTreeReq, o
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/chat-menu_tree/delete
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/delete_chatMenuTree.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/delete_chatMenuTree.go
 func (c *chatMenuTree) Delete(ctx context.Context, req *DeleteChatMenuTreeReq, options ...larkcore.RequestOptionFunc) (*DeleteChatMenuTreeResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -769,7 +769,7 @@ func (c *chatMenuTree) Delete(ctx context.Context, req *DeleteChatMenuTreeReq, o
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/chat-menu_tree/get
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/get_chatMenuTree.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/get_chatMenuTree.go
 func (c *chatMenuTree) Get(ctx context.Context, req *GetChatMenuTreeReq, options ...larkcore.RequestOptionFunc) (*GetChatMenuTreeResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -797,7 +797,7 @@ func (c *chatMenuTree) Get(ctx context.Context, req *GetChatMenuTreeReq, options
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/chat-menu_tree/sort
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/sort_chatMenuTree.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/sort_chatMenuTree.go
 func (c *chatMenuTree) Sort(ctx context.Context, req *SortChatMenuTreeReq, options ...larkcore.RequestOptionFunc) (*SortChatMenuTreeResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -825,7 +825,7 @@ func (c *chatMenuTree) Sort(ctx context.Context, req *SortChatMenuTreeReq, optio
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/chat-moderation/get
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/get_chatModeration.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/get_chatModeration.go
 func (c *chatModeration) Get(ctx context.Context, req *GetChatModerationReq, options ...larkcore.RequestOptionFunc) (*GetChatModerationResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -861,7 +861,7 @@ func (c *chatModeration) GetByIterator(ctx context.Context, req *GetChatModerati
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/chat-moderation/update
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/update_chatModeration.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/update_chatModeration.go
 func (c *chatModeration) Update(ctx context.Context, req *UpdateChatModerationReq, options ...larkcore.RequestOptionFunc) (*UpdateChatModerationResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -889,7 +889,7 @@ func (c *chatModeration) Update(ctx context.Context, req *UpdateChatModerationRe
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/chat-tab/create
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/create_chatTab.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/create_chatTab.go
 func (c *chatTab) Create(ctx context.Context, req *CreateChatTabReq, options ...larkcore.RequestOptionFunc) (*CreateChatTabResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -917,7 +917,7 @@ func (c *chatTab) Create(ctx context.Context, req *CreateChatTabReq, options ...
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/chat-tab/delete_tabs
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/deleteTabs_chatTab.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/deleteTabs_chatTab.go
 func (c *chatTab) DeleteTabs(ctx context.Context, req *DeleteTabsChatTabReq, options ...larkcore.RequestOptionFunc) (*DeleteTabsChatTabResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -945,7 +945,7 @@ func (c *chatTab) DeleteTabs(ctx context.Context, req *DeleteTabsChatTabReq, opt
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/chat-tab/list_tabs
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/listTabs_chatTab.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/listTabs_chatTab.go
 func (c *chatTab) ListTabs(ctx context.Context, req *ListTabsChatTabReq, options ...larkcore.RequestOptionFunc) (*ListTabsChatTabResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -973,7 +973,7 @@ func (c *chatTab) ListTabs(ctx context.Context, req *ListTabsChatTabReq, options
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/chat-tab/sort_tabs
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/sortTabs_chatTab.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/sortTabs_chatTab.go
 func (c *chatTab) SortTabs(ctx context.Context, req *SortTabsChatTabReq, options ...larkcore.RequestOptionFunc) (*SortTabsChatTabResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -1001,7 +1001,7 @@ func (c *chatTab) SortTabs(ctx context.Context, req *SortTabsChatTabReq, options
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/chat-tab/update_tabs
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/updateTabs_chatTab.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/updateTabs_chatTab.go
 func (c *chatTab) UpdateTabs(ctx context.Context, req *UpdateTabsChatTabReq, options ...larkcore.RequestOptionFunc) (*UpdateTabsChatTabResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -1029,7 +1029,7 @@ func (c *chatTab) UpdateTabs(ctx context.Context, req *UpdateTabsChatTabReq, opt
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/chat-top_notice/delete_top_notice
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/deleteTopNotice_chatTopNotice.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/deleteTopNotice_chatTopNotice.go
 func (c *chatTopNotice) DeleteTopNotice(ctx context.Context, req *DeleteTopNoticeChatTopNoticeReq, options ...larkcore.RequestOptionFunc) (*DeleteTopNoticeChatTopNoticeResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -1057,7 +1057,7 @@ func (c *chatTopNotice) DeleteTopNotice(ctx context.Context, req *DeleteTopNotic
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/chat-top_notice/put_top_notice
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/putTopNotice_chatTopNotice.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/putTopNotice_chatTopNotice.go
 func (c *chatTopNotice) PutTopNotice(ctx context.Context, req *PutTopNoticeChatTopNoticeReq, options ...larkcore.RequestOptionFunc) (*PutTopNoticeChatTopNoticeResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -1085,7 +1085,7 @@ func (c *chatTopNotice) PutTopNotice(ctx context.Context, req *PutTopNoticeChatT
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/file/create
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/create_file.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/create_file.go
 func (f *file) Create(ctx context.Context, req *CreateFileReq, options ...larkcore.RequestOptionFunc) (*CreateFileResp, error) {
 	options = append(options, larkcore.WithFileUpload())
 	// 发起请求
@@ -1114,7 +1114,7 @@ func (f *file) Create(ctx context.Context, req *CreateFileReq, options ...larkco
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/file/get
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/get_file.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/get_file.go
 func (f *file) Get(ctx context.Context, req *GetFileReq, options ...larkcore.RequestOptionFunc) (*GetFileResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -1148,7 +1148,7 @@ func (f *file) Get(ctx context.Context, req *GetFileReq, options ...larkcore.Req
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/image/create
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/create_image.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/create_image.go
 func (i *image) Create(ctx context.Context, req *CreateImageReq, options ...larkcore.RequestOptionFunc) (*CreateImageResp, error) {
 	options = append(options, larkcore.WithFileUpload())
 	// 发起请求
@@ -1177,7 +1177,7 @@ func (i *image) Create(ctx context.Context, req *CreateImageReq, options ...lark
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/image/get
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/get_image.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/get_image.go
 func (i *image) Get(ctx context.Context, req *GetImageReq, options ...larkcore.RequestOptionFunc) (*GetImageResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -1211,7 +1211,7 @@ func (i *image) Get(ctx context.Context, req *GetImageReq, options ...larkcore.R
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/message/create
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/create_message.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/create_message.go
 func (m *message) Create(ctx context.Context, req *CreateMessageReq, options ...larkcore.RequestOptionFunc) (*CreateMessageResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -1239,7 +1239,7 @@ func (m *message) Create(ctx context.Context, req *CreateMessageReq, options ...
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/message/delete
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/delete_message.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/delete_message.go
 func (m *message) Delete(ctx context.Context, req *DeleteMessageReq, options ...larkcore.RequestOptionFunc) (*DeleteMessageResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -1267,7 +1267,7 @@ func (m *message) Delete(ctx context.Context, req *DeleteMessageReq, options ...
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/message/get
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/get_message.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/get_message.go
 func (m *message) Get(ctx context.Context, req *GetMessageReq, options ...larkcore.RequestOptionFunc) (*GetMessageResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -1297,7 +1297,7 @@ func (m *message) Get(ctx context.Context, req *GetMessageReq, options ...larkco
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/message/list
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/list_message.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/list_message.go
 func (m *message) List(ctx context.Context, req *ListMessageReq, options ...larkcore.RequestOptionFunc) (*ListMessageResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -1333,7 +1333,7 @@ func (m *message) ListByIterator(ctx context.Context, req *ListMessageReq, optio
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/message/patch
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/patch_message.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/patch_message.go
 func (m *message) Patch(ctx context.Context, req *PatchMessageReq, options ...larkcore.RequestOptionFunc) (*PatchMessageResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -1361,7 +1361,7 @@ func (m *message) Patch(ctx context.Context, req *PatchMessageReq, options ...la
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/message/read_users
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/readUsers_message.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/readUsers_message.go
 func (m *message) ReadUsers(ctx context.Context, req *ReadUsersMessageReq, options ...larkcore.RequestOptionFunc) (*ReadUsersMessageResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -1389,7 +1389,7 @@ func (m *message) ReadUsers(ctx context.Context, req *ReadUsersMessageReq, optio
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/message/reply
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/reply_message.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/reply_message.go
 func (m *message) Reply(ctx context.Context, req *ReplyMessageReq, options ...larkcore.RequestOptionFunc) (*ReplyMessageResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -1419,7 +1419,7 @@ func (m *message) Reply(ctx context.Context, req *ReplyMessageReq, options ...la
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/message/urgent_app
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/urgentApp_message.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/urgentApp_message.go
 func (m *message) UrgentApp(ctx context.Context, req *UrgentAppMessageReq, options ...larkcore.RequestOptionFunc) (*UrgentAppMessageResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -1449,7 +1449,7 @@ func (m *message) UrgentApp(ctx context.Context, req *UrgentAppMessageReq, optio
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/message/urgent_phone
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/urgentPhone_message.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/urgentPhone_message.go
 func (m *message) UrgentPhone(ctx context.Context, req *UrgentPhoneMessageReq, options ...larkcore.RequestOptionFunc) (*UrgentPhoneMessageResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -1479,7 +1479,7 @@ func (m *message) UrgentPhone(ctx context.Context, req *UrgentPhoneMessageReq, o
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/message/urgent_sms
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/urgentSms_message.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/urgentSms_message.go
 func (m *message) UrgentSms(ctx context.Context, req *UrgentSmsMessageReq, options ...larkcore.RequestOptionFunc) (*UrgentSmsMessageResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -1507,7 +1507,7 @@ func (m *message) UrgentSms(ctx context.Context, req *UrgentSmsMessageReq, optio
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/message-reaction/create
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/create_messageReaction.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/create_messageReaction.go
 func (m *messageReaction) Create(ctx context.Context, req *CreateMessageReactionReq, options ...larkcore.RequestOptionFunc) (*CreateMessageReactionResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -1535,7 +1535,7 @@ func (m *messageReaction) Create(ctx context.Context, req *CreateMessageReaction
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/message-reaction/delete
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/delete_messageReaction.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/delete_messageReaction.go
 func (m *messageReaction) Delete(ctx context.Context, req *DeleteMessageReactionReq, options ...larkcore.RequestOptionFunc) (*DeleteMessageReactionResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -1563,7 +1563,7 @@ func (m *messageReaction) Delete(ctx context.Context, req *DeleteMessageReaction
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/message-reaction/list
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/list_messageReaction.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/list_messageReaction.go
 func (m *messageReaction) List(ctx context.Context, req *ListMessageReactionReq, options ...larkcore.RequestOptionFunc) (*ListMessageReactionResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -1599,7 +1599,7 @@ func (m *messageReaction) ListByIterator(ctx context.Context, req *ListMessageRe
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/message-resource/get
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/get_messageResource.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/get_messageResource.go
 func (m *messageResource) Get(ctx context.Context, req *GetMessageResourceReq, options ...larkcore.RequestOptionFunc) (*GetMessageResourceResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -1633,7 +1633,7 @@ func (m *messageResource) Get(ctx context.Context, req *GetMessageResourceReq, o
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/pin/create
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/create_pin.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/create_pin.go
 func (p *pin) Create(ctx context.Context, req *CreatePinReq, options ...larkcore.RequestOptionFunc) (*CreatePinResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -1661,7 +1661,7 @@ func (p *pin) Create(ctx context.Context, req *CreatePinReq, options ...larkcore
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/pin/delete
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/delete_pin.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/delete_pin.go
 func (p *pin) Delete(ctx context.Context, req *DeletePinReq, options ...larkcore.RequestOptionFunc) (*DeletePinResp, error) {
 	// 发起请求
 	apiReq := req.apiReq
@@ -1689,7 +1689,7 @@ func (p *pin) Delete(ctx context.Context, req *DeletePinReq, options ...larkcore
 //
 // - 官网API文档链接:https://open.feishu.cn/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/pin/list
 //
-// - 使用Demo链接:https://github.com/larksuite/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/list_pin.go
+// - 使用Demo链接:https://github.com/assassinLL/oapi-sdk-go/tree/v3_main/sample/apiall/imv1/list_pin.go
 func (p *pin) List(ctx context.Context, req *ListPinReq, options ...larkcore.RequestOptionFunc) (*ListPinResp, error) {
 	// 发起请求
 	apiReq := req.apiReq

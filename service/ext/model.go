@@ -12,7 +12,7 @@
 
 package larkext
 
-import larkcore "github.com/larksuite/oapi-sdk-go/v3/core"
+import larkcore "github.com/assassinLL/oapi-sdk-go/v3/core"
 
 const (
 	FileTypeDoc     = "doc"

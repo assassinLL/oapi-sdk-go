@@ -17,10 +17,10 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/larksuite/oapi-sdk-go/v3/card"
-	"github.com/larksuite/oapi-sdk-go/v3/core"
-	"github.com/larksuite/oapi-sdk-go/v3/core/httpserverext"
-	"github.com/larksuite/oapi-sdk-go/v3/event"
+	"github.com/assassinLL/oapi-sdk-go/v3/card"
+	"github.com/assassinLL/oapi-sdk-go/v3/core"
+	"github.com/assassinLL/oapi-sdk-go/v3/core/httpserverext"
+	"github.com/assassinLL/oapi-sdk-go/v3/event"
 )
 
 func getCard() *larkcard.MessageCard {

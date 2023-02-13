@@ -15,7 +15,7 @@ package larkevent
 import (
 	"net/http"
 
-	larkcore "github.com/larksuite/oapi-sdk-go/v3/core"
+	larkcore "github.com/assassinLL/oapi-sdk-go/v3/core"
 )
 
 type EventHeader struct {

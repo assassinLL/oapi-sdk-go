@@ -14,7 +14,7 @@
 package larkoptical_char_recognition
 
 import (
-	"github.com/larksuite/oapi-sdk-go/v3/core"
+	"github.com/assassinLL/oapi-sdk-go/v3/core"
 )
 
 type Image struct {

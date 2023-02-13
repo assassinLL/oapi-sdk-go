@@ -20,11 +20,11 @@ import (
 	"os"
 	"time"
 
-	lark "github.com/larksuite/oapi-sdk-go/v3"
-	larkcard "github.com/larksuite/oapi-sdk-go/v3/card"
-	larkcore "github.com/larksuite/oapi-sdk-go/v3/core"
-	larkgray_test_open_sg "github.com/larksuite/oapi-sdk-go/v3/service/gray_test_open_sg/v1"
-	larkim "github.com/larksuite/oapi-sdk-go/v3/service/im/v1"
+	lark "github.com/assassinLL/oapi-sdk-go/v3"
+	larkcard "github.com/assassinLL/oapi-sdk-go/v3/card"
+	larkcore "github.com/assassinLL/oapi-sdk-go/v3/core"
+	larkgray_test_open_sg "github.com/assassinLL/oapi-sdk-go/v3/service/gray_test_open_sg/v1"
+	larkim "github.com/assassinLL/oapi-sdk-go/v3/service/im/v1"
 )
 
 func uploadImage(client *lark.Client) {

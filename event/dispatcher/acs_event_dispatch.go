@@ -15,7 +15,7 @@ package dispatcher
 
 import (
 	"context"
-	"github.com/larksuite/oapi-sdk-go/v3/service/acs/v1"
+	"github.com/assassinLL/oapi-sdk-go/v3/service/acs/v1"
 )
 
 // 新增门禁访问记录

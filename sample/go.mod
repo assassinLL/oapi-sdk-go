@@ -1,10 +1,10 @@
-module github.com/larksuite/oapi-sdk-go/sample
+module github.com/assassinLL/oapi-sdk-go/sample
 
 go 1.17
 
-require github.com/larksuite/oapi-sdk-go/v3 v3.0.0
+require github.com/assassinLL/oapi-sdk-go/v3 v3.0.0
 
-replace github.com/larksuite/oapi-sdk-go/v3 => ../
+replace github.com/assassinLL/oapi-sdk-go/v3 => ../
 
 require github.com/bytedance/sonic v1.5.0
 

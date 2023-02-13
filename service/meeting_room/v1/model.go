@@ -14,7 +14,7 @@
 package larkmeeting_room
 
 import (
-	"github.com/larksuite/oapi-sdk-go/v3/event"
+	"github.com/assassinLL/oapi-sdk-go/v3/event"
 )
 
 type EventUids struct {

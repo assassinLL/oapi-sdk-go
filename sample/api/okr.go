@@ -17,9 +17,9 @@ import (
 	"fmt"
 	"os"
 
-	lark "github.com/larksuite/oapi-sdk-go/v3"
-	larkcore "github.com/larksuite/oapi-sdk-go/v3/core"
-	larkokr "github.com/larksuite/oapi-sdk-go/v3/service/okr/v1"
+	lark "github.com/assassinLL/oapi-sdk-go/v3"
+	larkcore "github.com/assassinLL/oapi-sdk-go/v3/core"
+	larkokr "github.com/assassinLL/oapi-sdk-go/v3/service/okr/v1"
 )
 
 func main() {

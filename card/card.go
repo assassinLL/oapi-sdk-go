@@ -21,8 +21,8 @@ import (
 	"net/http"
 	"strings"
 
-	larkcore "github.com/larksuite/oapi-sdk-go/v3/core"
-	larkevent "github.com/larksuite/oapi-sdk-go/v3/event"
+	larkcore "github.com/assassinLL/oapi-sdk-go/v3/core"
+	larkevent "github.com/assassinLL/oapi-sdk-go/v3/event"
 )
 
 type CardActionHandler struct {

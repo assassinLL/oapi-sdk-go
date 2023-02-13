@@ -12,7 +12,7 @@
 
 package larkapplication
 
-import larkevent "github.com/larksuite/oapi-sdk-go/v3/event"
+import larkevent "github.com/assassinLL/oapi-sdk-go/v3/event"
 
 type P1OrderPaidV6 struct {
 	*larkevent.EventReq

@@ -17,9 +17,9 @@ import (
 	"fmt"
 	"os"
 
-	lark "github.com/larksuite/oapi-sdk-go/v3"
-	larkcore "github.com/larksuite/oapi-sdk-go/v3/core"
-	larkext "github.com/larksuite/oapi-sdk-go/v3/service/ext"
+	lark "github.com/assassinLL/oapi-sdk-go/v3"
+	larkcore "github.com/assassinLL/oapi-sdk-go/v3/core"
+	larkext "github.com/assassinLL/oapi-sdk-go/v3/service/ext"
 )
 
 func GetAppAccessTokenBySelfBuiltApp() {

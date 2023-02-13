@@ -2861,8 +2861,9 @@ type User struct {
 
 	IsFrozen *bool `json:"is_frozen,omitempty"` // 是否暂停用户
 
-	JobLevelId  *string `json:"job_level_id,omitempty"`  // 职级ID
-	JobFamilyId *string `json:"job_family_id,omitempty"` // 序列ID
+	JobLevelId           *string `json:"job_level_id,omitempty"`  // 职级ID
+	JobFamilyId          *string `json:"job_family_id,omitempty"` // 序列ID
+	NeedSendNotification *bool   `json:"need_send_notification"`  // 消息通知
 }
 
 type UserBuilder struct {
@@ -2924,10 +2925,12 @@ type UserBuilder struct {
 	isFrozen     bool // 是否暂停用户
 	isFrozenFlag bool
 
-	jobLevelId      string // 职级ID
-	jobLevelIdFlag  bool
-	jobFamilyId     string // 序列ID
-	jobFamilyIdFlag bool
+	jobLevelId               string // 职级ID
+	jobLevelIdFlag           bool
+	jobFamilyId              string // 序列ID
+	jobFamilyIdFlag          bool
+	needSendNotification     bool // 通知flag
+	needSendNotificationFlag bool
 }
 
 func NewUserBuilder() *UserBuilder {
@@ -3196,6 +3199,15 @@ func (builder *UserBuilder) JobFamilyId(jobFamilyId string) *UserBuilder {
 	return builder
 }
 
+// 通知标志
+//
+// 示例值：true
+func (builder *UserBuilder) NeedSendNotification(needSendNotification bool) *UserBuilder {
+	builder.needSendNotification = needSendNotification
+	builder.needSendNotificationFlag = true
+	return builder
+}
+
 func (builder *UserBuilder) Build() *User {
 	req := &User{}
 	if builder.unionIdFlag {
@@ -3311,7 +3323,9 @@ func (builder *UserBuilder) Build() *User {
 	}
 	if builder.jobFamilyIdFlag {
 		req.JobFamilyId = &builder.jobFamilyId
-
+	}
+	if builder.needSendNotificationFlag {
+		req.NeedSendNotification = &builder.needSendNotification
 	}
 	return req
 }
